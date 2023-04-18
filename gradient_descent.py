@@ -1,8 +1,6 @@
 
 import numpy as np
 
-np.set_printoptions(precision=4)
-
 def gradient_descent(x, y): 
     w_curr = b_curr = 0
     iterations = 10000
@@ -19,6 +17,6 @@ def gradient_descent(x, y):
         print("iteration: {}, w : {} , b: {} , Cost {} ".format(i, w_curr, b_curr, cost))
 
 x = np.array([1,2,3,4,5])
-y = np.array([5,7,9,11,13])
+y = np.array([10,20,30,40,50])
 
 gradient_descent(x, y)
